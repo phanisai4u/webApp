@@ -5,9 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
-router.post('/',function(rer,res,next){
+router.post('/',function(req,res,next){
             
-    res.json({ message: 'phani! welcome to our post api!' });   
+    res.json({ message: req.param });   
             
 });
 
